@@ -21,20 +21,46 @@ Reference datatype/Non-Primitive datatype:
 // const bigNumber=12345457565643123456543n
 // console.log(typeof bigNumber)//Bigint
 
-const heros=["iron","steel","thor","hulk"]//Array
+// const heros=["iron","steel","thor","hulk"]//Array
 
-let myObj={
-    name:"riya",
-    age:22,
+// let myObj={
+//     name:"riya",
+//     age:22,
 
-}//Object
+// }//Object
 
-const myFunc=function(){
-    console.log("Hello World");
+// const myFunc=function(){
+//     console.log("Hello World");
     
-}
+// }
 
-console.log(typeof heros)//Object
-console.log(typeof myObj);//object
-console.log(typeof myFunc);//function(called as obj func)
+// console.log(typeof heros)//Object
+// console.log(typeof myObj);//object
+// console.log(typeof myFunc);//function(called as obj func)
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Primitive)  Heap(Non-Primitive)
+
+let name="Riya"
+
+let anotherName=name;
+anotherName="Risha"
+
+console.log(name);
+console.log(anotherName);
+
+
+let userOne= {
+    email:"riya@gmail.com",
+    upi:"user@123"
+}
+let userTwo=userOne;
+userTwo=userOne;
+userTwo.email="ria@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
 
